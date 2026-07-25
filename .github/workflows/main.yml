@@ -36,10 +36,10 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build Docker image
-      run: docker build -t ghcr.io/YOUR_GITHUB_USERNAME/schoolproject-app -f ./SchoolProject/Dockerfile .
+      run: docker build -t ghcr.io/amratef0/schoolproject-app -f ./SchoolProject/Dockerfile .
 
     - name: Push Docker image
-      run: docker push ghcr.io/YOUR_GITHUB_USERNAME/schoolproject-app
+      run: docker push ghcr.io/amratef0/schoolproject-app
 
   deploy:
     needs: build
