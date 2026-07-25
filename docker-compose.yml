@@ -11,7 +11,7 @@ services:
       - sqlserver_data:/var/opt/mssql
 
   web:
-    image: ghcr.io/YOUR_GITHUB_USERNAME/schoolproject-app:latest
+    image: ghcr.io/amratef0/schoolproject-app:latest
     build:
       context: .
       dockerfile: SchoolProject/Dockerfile
